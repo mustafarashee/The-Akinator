@@ -14,6 +14,14 @@ ftc.MFTC();
   }
 
 }
+void f_lecturar()
+{
+  b=teach.female_lec();
+  if (b==1)
+  {
+    teach.FFullTimeCooperative();
+  }
+}
 protected:
 int b;
 dt teach;

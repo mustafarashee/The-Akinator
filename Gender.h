@@ -1,6 +1,8 @@
 #include <iostream>
 
 #include "associate_prof.h"
+
+
 using namespace std;
 
 class teacher_gender:public dt
@@ -15,7 +17,7 @@ teacher.m_associate();
 }
 else
 {
-  cout<<"per female";
+ fassistant.FAssistantprofs();
 }
 }
 void visiting()
@@ -24,18 +26,20 @@ a=teach.gender();
 {
   if (a==1)
 {
-cout<<"visiting male";
+teach.MVisitingfaculty();
 }
 else
 {
-  cout<<"visiting female";
+  teach.FVisitingfaculty();
 }
 
 }
 }
   protected:
   dt teach;
+  Assistantprofs fassistant;
   associate teacher;
+  
   int a;
   
 };

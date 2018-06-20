@@ -15,6 +15,14 @@ if (b==1)
 lec.mlecturar();
 }
 }
+void FAssistantprofs()
+{
+  b=teach.F_Assistantprofs();
+  if (b==1)
+  {
+    lec.f_lecturar();
+  }
+}
 private:
 dt teach;
 lecturar lec;
