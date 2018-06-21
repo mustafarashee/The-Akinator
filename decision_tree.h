@@ -1,12 +1,13 @@
 #include <iostream>
 #include <string>
+#include "File.h"
 using namespace std;
 class dt
 {
   public:
 int faculty(void)
 {
-  cout<<"Does your teacher permenent?"<<endl;
+  fptr.file(1);
   cin>>ans;
   if(ans == "Yes" || ans == "yes")
   {
@@ -19,8 +20,7 @@ int faculty(void)
 }
 int gender()
 {
-
-  cout<<"Does your teacher male?"<<endl;
+  fptr.file(2);
   cin>>ans;
   if(ans == "Yes" || ans == "yes")
   {
@@ -33,19 +33,19 @@ int gender()
 }
 int MAssosiate(void)
 {
-  cout<<"Does your teacher Assosiate Professor?"<<endl;
+  fptr.file(3);
   cin>>ans;
   if(ans == "Yes" || ans == "yes")
   {
-    cout<<"Is your teacher Depertment's chairperson?"<<endl;
+    fptr.file(4);
     cin>>ans;
    if(ans == "Yes" || ans == "yes")
    {
-     cout<<"Your Teachers is DR SADIQ ALI KHAN"<<endl;
+     fptr.file(5);
    }
    else
    {
-     cout<<"Your Teachers is DR NADEEM MEHMOOD"<<endl;
+     fptr.file(6);
    }
 
   }
@@ -55,103 +55,98 @@ return 1;
   }}
   int MAssistantprofs()
 {
-  cout<<"Does your teacher Assistantprof?"<<endl;
+  fptr.file(7);
   cin>>this->ans;
   if(this->ans == "Yes" || this->ans == "yes")
- {  
-  cout<<"Does your teacher depertment's x-chairperson?"<<endl;
+ { 
+  fptr.file(8);  
   cin>>this->ans;
   if(this->ans == "Yes" || this->ans == "yes")
   {
-    cout<<"Your teacher is MR BADAR SAMI"<<endl;
+    fptr.file(9);
     goto end;
   }
-  cout<<"Is your teacher phd?"<<endl;
+  fptr.file(10);
   cin>>this->ans;
    if (this->ans == "Yes" || this->ans == "yes")
   {  
-      cout<<"Is your teacher x-student advisor?"<<endl;
+     fptr.file(11);
       cin>>ans;
       if (ans == "Yes" || ans == "yes")
       {
-        cout<<"Your teacher is MR FARHAN AHMED SIDQUI"<<endl;
+        fptr.file(12);
         goto end;
       }
 
-      cout<<"Does your teacher teaches Artifical Intellegence course?"<<endl;
+      fptr.file(13);
       cin>>ans;
        if (ans == "Yes" || ans == "yes")
       {
-        cout<<"Your teacher is DR NADEEM MEHMOOD"<<endl;
+        fptr.file(14);
         goto end;
       }
-
-      cout<<"Does your teacher teaches Networking?"<<endl;
+      fptr.file(15);
       cin>>ans;
        if (ans == "Yes" || ans == "yes")
       {
-        cout<<"Your teacher is DR MUHAMMAD SAEED"<<endl;
+        fptr.file(16);
         goto end;
       }
-
-      cout<<"Is your teacher teaches Software project management?"<<endl;
+      fptr.file(17);
       cin>>ans;
        if (ans == "Yes" || ans == "yes")
       {
-        cout<<"Your teacher is MR HUSSAIN SALEEM"<<endl;
+        fptr.file(18);
         goto end;
       }
-
-      cout<<"Is your teacher teaches database management system?"<<endl;
+      fptr.file(19);
       cin>>ans;
        if (ans == "Yes" || ans == "yes")
       {
-        cout<<"Your teacher is MR S. M. KHALID JAMAL"<<endl;
+        fptr.file(20);
         goto end;
       }
-
-      cout<<"Is your teacher teaches related to data mining?"<<endl;
+      fptr.file(21);
       cin>>ans;
        if (ans == "Yes" || ans == "yes")
       {
-        cout<<"Your teacher is DR TAHSEEN AHMED JILANI"<<endl;
+        fptr.file(22);
         goto end;
       }
       else
       {
-        cout<<"Your teacher is DR SYED ASIM ALI"<<endl;
+        fptr.file(23);
         goto end;
       }
 
     }
     else
     {
-      cout<<"Your teacher is MR SYED JAMAL HUSSAIN"<<endl;
+      fptr.file(24);
       goto end;
     }
   }
   else
   {
-    //next class
     return 1;
   };
   end:;
 }
 int MLecturers()
 {
-    cout<<"Is your teacher Lecturer?"<<endl;
+  fptr.file(25);
   cin>>ans;
   if(ans == "Yes" || ans == "yes")
   {
-  cout<<"Is your teacher student's advisor?"<<endl;
+    fptr.file(26);
   cin>>ans;
   if(ans == "Yes" || ans == "yes")
   {
-    cout<<"Your teacher is MR TAHA BIN NIAZ"<<endl;
+    fptr.file(27);
   }
  else 
   {
-    cout<<"Your teacher is MR M. SAJID"<<endl;
+    fptr.file(28);
   }
   }
   else 
@@ -162,33 +157,33 @@ int MLecturers()
 }
 void MFullTimeCooperative() 
 {
-  cout<<"Is your teacher teaches related to statistics and probability?"<<endl;
+  fptr.file(29);
   cin>>this->ans;
   if(this->ans == "Yes" || ans == "yes")
   {
-    cout<<"Your teacher is MR SAAD AKBER"<<endl;
+    fptr.file(30);
     goto end;
   }
-  cout<<"Is your teacher teaches related to mathematics?"<<endl;
+  fptr.file(31);
   cin>>this->ans;
    if(this->ans == "yes" || ans == "Yes")
   {
-  cout<<"Your teacher is MR USMAN AMJAD"<<endl;
+  fptr.file(32);
   goto end;
   }
   else 
   {
-    cout<<"Your teacher is MR S. MEESAM ALI ZAIDI"<<endl;
+    fptr.file(33);
   }
   end:;
 }
 int F_Assistantprofs()
 {
-  cout<<"Is your teacher Assistant professor?"<<endl;
+  fptr.file(34);
   cin>>this->ans;
   if(this->ans == "Yes" || this->ans == "yes")
  {
-   cout<<"Your teacher is DR HUMERA TARIQ"<<endl;
+   fptr.file(35);
  }
  else 
   {
@@ -197,34 +192,34 @@ int F_Assistantprofs()
 }
 int female_lec(void)
 {
-cout<<"Does your teacher Lecturer?"<<endl;
+  fptr.file(36);
   cin>>ans;
   if(ans == "Yes" || ans == "yes")
   {
-  cout<<"Does your teacher student's advisor?"<<endl;
+  fptr.file(37);
   cin>>ans;
   if(ans == "Yes" || ans == "yes")
   {
-    cout<<"Your teacher is MS HUMERA BASHEER"<<endl;
+    fptr.file(38);
     goto end;
   }
-  cout << "Have your teacher done her MBA in 2009 from KUBS ?" << endl;	
+  fptr.file(39);
 	cin >> ans;
 			if (ans == "yes" || ans == "Yes")
 			{
-				cout << "your teacher is MARYAM FEROZ"<<endl;
+        fptr.file(40);
         goto end;
 			}
-    cout << "is your teacher's best scope is operating systems?" << endl;
-		cin >> ans;
-				if (ans == "yes" || ans == "Yes")
+      fptr.file(41);
+	  	cin >> ans;
+			if (ans == "yes" || ans == "Yes")
 				{
-					cout << "Your teacher is MADIHA KHURRAM"<<endl;
+          fptr.file(42);
           goto end;
 				}
         else 
         {
-          cout << "Your teacher is SHAISTA RAEES"<<endl;
+          fptr.file(43);
           goto end;
          }
  }
@@ -238,152 +233,151 @@ cout<<"Does your teacher Lecturer?"<<endl;
 
 void FFullTimeCooperative()
 {
-   cout << "Does your teacher recently recieve gold medal from PAF KIET?" << endl;				
+  fptr.file(44);			
 	 cin >> ans;
 					if (ans == "yes" || ans == "Yes")
 					{
-						cout << "Your teacher is YUSRA MANSOOR"<<endl;
+            fptr.file(45);
             goto end;
 					}
-    cout << "Does your teacher teaches assembly language course?" << endl;
+    fptr.file(46);
 	  cin >> ans;
 		if (ans == "yes")
 		{
-			cout << "Your teacher is MS UROOJ WAHEED"<<endl;
+       fptr.file(47);
       goto end;
 		}
     else
     {
-      cout << "Your teacher is MS AEMON ABDUL RAZZQUE"<<endl;
+      fptr.file(48);
       goto end;
     }
     end:;      
 }
 void FVisitingfaculty(void)
 	{
-		cout << "Is your teacher is from urdu department?" << endl;
+    fptr.file(49);
 		cin >> ans;
 		if (ans == "yes")
 		{
-			cout << "Is your teacher is assistant professor in urdu department?" << endl;
+      fptr.file(50);
 			cin >> ans;
 			if (ans == "yes")
 			{
-				cout << "your teache is Rahat Afshan";
+        fptr.file(51);
 			}
 			else if (ans != "yes")
 			{
-				cout << "Is your teacher is professor in Urdu department?" << endl;
+        fptr.file(52);
 				cin >> ans;
 				if (ans == "yes")
 				{
-					cout << "your teacher is Tazeem-ul-Firdoos";
+          fptr.file(53);
 				}
 				else {
-					cout << "your teacher is Sohaila Farooqi";
+          fptr.file(54);
 				}
 
 			}
 		}
 			else if (ans != "yes")
 			{
-				cout << "Is your teacher is from maths department?" << endl;
+        fptr.file(55);
 				cin >> ans;
 				if (ans == "yes")
 				{
-
-					cout << "does your teacher wear gown in class" << endl;
+          fptr.file(56);
 					cin >> ans;
 					if (ans == "yes")
 					{
-						cout << "your teacher is Noor Fatima";
+            fptr.file(57);
 					}
 					else{
-						cout << "your teacher is HAFSA JAFRI";
+            fptr.file(58);
 					}
 				}
 				else {
-					cout << "your teacher is Zufishan Ghani";
+          fptr.file(59);
 				}
 			}
 		}
     void MVisitingfaculty() 
   
     {
-      cout << "Is your teacher teaches data communication and networking in  department?" << endl;
+      fptr.file(60);
 				cin >> ans;
 				if (ans == "yes")
         {
-         cout << "your teacher is NADEEM AHMAD";
+          fptr.file(61);
          goto end;
         }
         else if(ans != "yes")
         {
-          cout<<"Is your lecturer at  Sheikh Zayed Islamic Center ?"<<endl;
+          fptr.file(62);
 					cin >> ans;
 				         	if (ans == "yes")
 				            	{
-					            	cout << "your teacher is MR. ABDUL BARI";
+                        fptr.file(63);
                          goto end;
 					             }
                        else
                         {
-				                 cout << "Is your teacher teaches physics department?" << endl;
+                          fptr.file(64);
 			                	cin >> ans;
 				                if (ans == "yes")
 				                   {
-                           	cout << "does your teacher also teaches at ISPA?" << endl;
+                             fptr.file(65);
 				                  	cin >> ans;
 					                   if (ans == "yes")
 				                     	{
-						                   cout << "your teacher is KHURRAM IQBAL";
+                                 fptr.file(66);
                                goto end;
 					                    }
 				                      	else{
-						                     cout << "your teacher is INTIKHAB ULFAT";
+                                  fptr.file(67);
                                  goto end;
 					                          }
                           }
 				
 				        else if(ans != "yes")
-            {   
-                   cout<<"Does your teacher teaches islamiat in your dept?"<<endl;
+            {
+                  fptr.file(68);
 					         cin >> ans;
 				         	if (ans == "yes")
 				            	{
-					            	cout << "your teacher is MR MOHSIN";
+                        fptr.file(69);
                          goto end;
 					             }
                    else if(ans != "yes")
                 {
-                      cout<<"Does your teacher teaches pst in your dept?"<<endl;
+                  fptr.file(70);
 					         cin >> ans;
 				         	if (ans == "yes")
 				            	{
-					            	cout << "your teacher is DR MOIZ";
+                        fptr.file(71);
                          goto end;
 					            }
                        else if(ans != "yes")
                     {
-                        cout<<"Does your teacher teaches maths in your dept?"<<endl;
+                      fptr.file(72);
 					         cin >> ans;
 				         	if (ans == "yes")
 				            	{
-					            	cout << "your teacher is ASIF IQBAL";
+                        fptr.file(73);
                          goto end;
 					            }
 
                        else if(ans != "yes")
                       {
-                        cout<<"Does your teacher GOLD MEDALIST?"<<endl;
+                        fptr.file(74);
 					         cin >> ans;
 				         	if (ans == "yes")
 				            	{
-					            	cout << "your teacher is ANWAR MEHMOOD";
+                        fptr.file(75);
                          goto end;
                       }
                        else{
-                         cout << "your teacher is ZEESHAN ALAM NAYYAR";
+                         fptr.file(76);
                            }
                       }
                    }
@@ -396,5 +390,6 @@ void FVisitingfaculty(void)
   }
   protected:
   string ans;
+  File fptr;
 
 };
