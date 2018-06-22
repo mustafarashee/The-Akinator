@@ -3,7 +3,7 @@ using namespace std;
 
 #include "assistant_prof.h"
 
-class associate:public dt
+class associate : public dt
 {
 public:
 void m_associate(void)
