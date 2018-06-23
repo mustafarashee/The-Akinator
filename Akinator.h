@@ -8,6 +8,7 @@ class Akinator
   {
     this->ans="yes";
     this->name=" ";
+    Teacher= new faculty();
   }
   void Start()
   {
@@ -16,11 +17,10 @@ class Akinator
     cout<<"Enter your name : ";
     cin>> this->name;
     system("cls");
-    faculty Teacher;
     cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
  while(ans == "yes" || ans == "Yes" )
  {
- Teacher.Faculty();
+ Teacher->Faculty();
  cout<<endl<<"Wanna continue??"<<endl; 
  cin>>ans;
  system("cls");
@@ -30,4 +30,5 @@ class Akinator
  protected:
   string ans;
   string name;
+  dt *Teacher;
 };

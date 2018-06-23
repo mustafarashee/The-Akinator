@@ -2,25 +2,24 @@
 #include "fulltime_corporate.h"
 using namespace std;
 
-class lecturar
+class lecturar : public dt
 {
 public:
-void mlecturar()
+int mlecturar()
   {
-  if (teach.MLecturers()==1)
-  {  
-    ftc.MFTC();
+    Teacher = new dt();
+  if (Teacher->mlecturar()==1)
+  {   
+    Teacher = new FTCORP();
+    Teacher->MFullTimeCooperative();
   }
 }
-void f_lecturar()
+int f_lecturar()
 {
-  
-  if (teach.female_lec() == 1)
+   Teacher = new dt();
+  if (Teacher->f_lecturar() == 1)
   {
-    teach.FFullTimeCooperative();
+    Teacher->FFullTimeCooperative();
   }
 }
-protected:
-dt teach;
-FTCORP ftc;
 };

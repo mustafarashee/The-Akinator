@@ -6,7 +6,7 @@ using namespace std;
 class dt 
 {
   public:
-int faculty(void)
+int virtual Faculty(void)
 {
   fptr.file(1);
   cin>>ans;
@@ -32,7 +32,7 @@ int gender()
     return 0;
   }
 }
-int MAssosiate(void)
+int virtual m_associate(void)
 {
   fptr.file(3);
   cin>>ans;
@@ -54,7 +54,7 @@ int MAssosiate(void)
   {
 return 1;
   }}
-  int MAssistantprofs()
+  int virtual MAssistantprofs()
 {
   fptr.file(7);
   cin>>this->ans;
@@ -133,7 +133,7 @@ return 1;
   };
   end:;
 }
-int MLecturers()
+int virtual mlecturar()
 {
   fptr.file(25);
   cin>>ans;
@@ -156,7 +156,7 @@ int MLecturers()
   return 1;
 }
 }
-void MFullTimeCooperative() 
+void virtual MFullTimeCooperative() 
 {
   fptr.file(29);
   cin>>this->ans;
@@ -178,7 +178,7 @@ void MFullTimeCooperative()
   }
   end:;
 }
-int F_Assistantprofs()
+int virtual FAssistantprofs()
 {
   fptr.file(34);
   cin>>this->ans;
@@ -191,7 +191,7 @@ int F_Assistantprofs()
   return 1;
   }
 }
-int female_lec(void)
+int virtual f_lecturar(void)
 {
   fptr.file(36);
   cin>>ans;
@@ -389,8 +389,25 @@ void FVisitingfaculty(void)
         } 
       end:;
   }
+
+ void virtual permenent()
+ {
+   //Abstract function
+ }
+ void virtual visiting()
+ {
+   //Abstract function
+ }
+
+ ~dt()
+ {
+   cout<<endl<<"DEStructor CAlled"<<endl;
+   delete[] Teacher;
+   Teacher = NULL;
+ }
   protected:
   string ans;
   File fptr;
+  dt *Teacher;
 
 };

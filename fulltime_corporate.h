@@ -1,13 +1,12 @@
 #include <iostream>
 using namespace std;
 #include "decision_tree.h"
-class FTCORP
+class FTCORP : public dt
 {
 public:
-void MFTC()
+void MFullTimeCooperative()
 {
-teach.MFullTimeCooperative();
+Teacher=new dt();  
+Teacher->MFullTimeCooperative();
 }
-protected:
-dt teach;
 };

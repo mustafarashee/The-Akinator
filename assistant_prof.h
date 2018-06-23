@@ -2,24 +2,25 @@
 #include "lecturar.h"
 using namespace std;
 
-class Assistantprofs
+class Assistantprofs : public dt
 {
   public:
-void MAssistantprofs()
+int MAssistantprofs()
 {
-if (teach.MAssistantprofs()==1)
+  Teacher = new dt();
+if (Teacher->MAssistantprofs()==1)
 {
-lec.mlecturar();
+  Teacher = new lecturar();
+  Teacher->mlecturar();
 }
 }
-void FAssistantprofs()
+int FAssistantprofs()
 {
-  if (teach.F_Assistantprofs() == 1)
+   Teacher = new dt();
+  if (Teacher->FAssistantprofs() == 1)
   {
-    lec.f_lecturar();
+     Teacher = new lecturar();
+     Teacher->f_lecturar();
   }
 }
-private:
-dt teach;
-lecturar lec;
 };

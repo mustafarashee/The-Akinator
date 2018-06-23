@@ -2,17 +2,16 @@
 #include "assistant_prof.h"
 using namespace std;
 
-class associate 
+class associate : public dt
 {
 public:
-void m_associate(void)
+int m_associate(void)
 {
-if(asso.MAssosiate() == 1)
+  Teacher = new dt();
+if(Teacher->m_associate() == 1)
 {
-assist.MAssistantprofs();
+  Teacher = new Assistantprofs();
+  Teacher -> MAssistantprofs();
 }
 }
-protected:
-dt asso;
-Assistantprofs assist;
 };
