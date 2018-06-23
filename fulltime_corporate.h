@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 #include "decision_tree.h"
-class FTCORP:public dt
+class FTCORP
 {
 public:
 void MFTC()

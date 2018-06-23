@@ -1,29 +1,26 @@
 #include <iostream>
-using namespace std;
 #include "fulltime_corporate.h"
+using namespace std;
 
-class lecturar:public dt{
-
+class lecturar
+{
 public:
-void mlecturar(){
-b=teach.MLecturers();
-
-  if (b==1)
+void mlecturar()
   {
-ftc.MFTC();
+  if (teach.MLecturers()==1)
+  {  
+    ftc.MFTC();
   }
-
 }
 void f_lecturar()
 {
-  b=teach.female_lec();
-  if (b==1)
+  
+  if (teach.female_lec() == 1)
   {
     teach.FFullTimeCooperative();
   }
 }
 protected:
-int b;
 dt teach;
 FTCORP ftc;
 };

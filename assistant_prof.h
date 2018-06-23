@@ -1,24 +1,20 @@
-
 #include <iostream>
 #include "lecturar.h"
-
 using namespace std;
 
-class Assistantprofs:public dt
+class Assistantprofs
 {
   public:
 void MAssistantprofs()
 {
-b=teach.MAssistantprofs();
-if (b==1)
+if (teach.MAssistantprofs()==1)
 {
 lec.mlecturar();
 }
 }
 void FAssistantprofs()
 {
-  b=teach.F_Assistantprofs();
-  if (b==1)
+  if (teach.F_Assistantprofs() == 1)
   {
     lec.f_lecturar();
   }
@@ -26,5 +22,4 @@ void FAssistantprofs()
 private:
 dt teach;
 lecturar lec;
-int b;
 };

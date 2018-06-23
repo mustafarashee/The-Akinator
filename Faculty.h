@@ -2,13 +2,12 @@
 #include "Gender.h"
 using namespace std;
 
-class faculty:public dt
+class faculty
 {
 public:
-void Faculty(){
-a=teacher.faculty();
-
-if(a==1)
+void Faculty()
+{
+if(teacher.faculty()==1)
 {
 gen.permenent();
 }
@@ -17,8 +16,6 @@ gen.visiting();
 }
 }
 protected:
-int a;
-
 dt teacher;
 teacher_gender gen;
 };

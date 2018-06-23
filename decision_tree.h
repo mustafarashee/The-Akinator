@@ -1,8 +1,9 @@
 #include <iostream>
 #include <string>
-#include "File.h"
+#include"File.h"
+
 using namespace std;
-class dt
+class dt 
 {
   public:
 int faculty(void)

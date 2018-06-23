@@ -1,17 +1,13 @@
 #include <iostream>
-
 #include "associate_prof.h"
-
-
 using namespace std;
 
-class teacher_gender:public dt
+class teacher_gender
 {
 public:
 void permenent()
 {
-a=teach.gender();
-if (a==1)
+if (teach.gender() == 1)
 {
 teacher.m_associate();
 }
@@ -21,25 +17,18 @@ else
 }
 }
 void visiting()
-{
-a=teach.gender();
-{
-  if (a==1)
-{
-teach.MVisitingfaculty();
-}
+  {
+  if(teach.gender() == 1) 
+  {
+    teach.MVisitingfaculty();
+   }
 else
 {
   teach.FVisitingfaculty();
 }
-
-}
-}
+  }
   protected:
   dt teach;
   Assistantprofs fassistant;
   associate teacher;
-  
-  int a;
-  
 };
