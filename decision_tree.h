@@ -1,15 +1,23 @@
 #include <iostream>
 #include <string>
-#include "File.h"
+#include"File.h"
+
 using namespace std;
-class dt
+class dt 
 {
   public:
-int faculty(void)
+int virtual Faculty(void)
 {
-  fptr.file(1);
-  cin>>ans;
-  if(ans == "Yes" || ans == "yes")
+ //fptr.file(1);
+//question 1
+  do{
+     system("cls");
+     cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
+    
+     fptr.file(1);
+  cin>>ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+  if(ans == "Yes" || ans == "yes"||ans=="YES")
   {
     return 1;
   }
@@ -20,9 +28,13 @@ int faculty(void)
 }
 int gender()
 {
+  //question 2
+  do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(2);
-  cin>>ans;
-  if(ans == "Yes" || ans == "yes")
+  cin>>ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+  if(ans == "Yes" || ans == "yes"|| ans== "YES")
   {
    return 1;
   }
@@ -31,15 +43,21 @@ int gender()
     return 0;
   }
 }
-int MAssosiate(void)
-{
+int virtual m_associate(void)
+{//question 3
+  do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(3);
-  cin>>ans;
-  if(ans == "Yes" || ans == "yes")
-  {
+  cin>>ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+  if(ans == "Yes" || ans == "yes"|| ans== "YES")
+  { //question 4
+    do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
     fptr.file(4);
-    cin>>ans;
-   if(ans == "Yes" || ans == "yes")
+    cin>>ans;}
+    while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+   if(ans == "Yes" || ans == "yes"||ans=="YES")
    {
      fptr.file(5);
    }
@@ -53,62 +71,93 @@ int MAssosiate(void)
   {
 return 1;
   }}
-  int MAssistantprofs()
-{
+  int virtual MAssistantprofs()
+{//question 5
+  do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(7);
-  cin>>this->ans;
-  if(this->ans == "Yes" || this->ans == "yes")
- { 
+    cin>>this->ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+  if(this->ans == "Yes" || this->ans == "yes"||this->ans=="YES")
+ { //question 6
+   do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(8);  
-  cin>>this->ans;
-  if(this->ans == "Yes" || this->ans == "yes")
+  cin>>this->ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+ if(this->ans == "Yes" || this->ans == "yes"||this->ans=="YES")
   {
     fptr.file(9);
     goto end;
   }
+  //question 7
+  do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(10);
-  cin>>this->ans;
-   if (this->ans == "Yes" || this->ans == "yes")
-  {  
+  cin>>this->ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+   if (this->ans == "Yes" || this->ans == "yes"||this->ans=="YES")
+  { 
+    //question 8
+     do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
      fptr.file(11);
-      cin>>ans;
-      if (ans == "Yes" || ans == "yes")
+      cin>>ans;}
+      while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+      if (ans == "Yes" || ans == "yes"||ans=="YES")
       {
         fptr.file(12);
         goto end;
       }
-
+      //question 9
+do{
+  system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
       fptr.file(13);
-      cin>>ans;
-       if (ans == "Yes" || ans == "yes")
+      cin>>ans;}
+       while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+       if (ans == "Yes" || ans == "yes"||ans=="YES")
       {
         fptr.file(14);
         goto end;
       }
+      //question 10
+      do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
       fptr.file(15);
-      cin>>ans;
-       if (ans == "Yes" || ans == "yes")
+      cin>>ans;}
+      while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+       if (ans == "Yes" || ans == "yes"||ans=="YES")
       {
         fptr.file(16);
         goto end;
       }
+       do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
       fptr.file(17);
-      cin>>ans;
-       if (ans == "Yes" || ans == "yes")
-      {
+      cin>>ans;}
+      while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+       if (ans == "Yes" || ans == "yes"||ans=="YES")
+      { 
         fptr.file(18);
         goto end;
       }
+      do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
       fptr.file(19);
-      cin>>ans;
-       if (ans == "Yes" || ans == "yes")
+      cin>>ans;}
+      while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+       if (ans == "Yes" || ans == "yes"||ans=="YES")
       {
         fptr.file(20);
         goto end;
       }
+      do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
       fptr.file(21);
-      cin>>ans;
-       if (ans == "Yes" || ans == "yes")
+      cin>>ans;}
+       while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+       if (ans == "Yes" || ans == "yes"||ans=="YES")
       {
         fptr.file(22);
         goto end;
@@ -132,15 +181,21 @@ return 1;
   };
   end:;
 }
-int MLecturers()
+int virtual mlecturar()
 {
+   do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(25);
-  cin>>ans;
-  if(ans == "Yes" || ans == "yes")
+  cin>>ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+  if(ans == "Yes" || ans == "yes"||ans=="YES")
   {
+    do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
     fptr.file(26);
-  cin>>ans;
-  if(ans == "Yes" || ans == "yes")
+  cin>>ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+  if(ans == "Yes" || ans == "yes"||ans=="YES")
   {
     fptr.file(27);
   }
@@ -155,18 +210,24 @@ int MLecturers()
   return 1;
 }
 }
-void MFullTimeCooperative() 
+void virtual MFullTimeCooperative() 
 {
+  do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(29);
-  cin>>this->ans;
-  if(this->ans == "Yes" || ans == "yes")
+  cin>>ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+  if(ans == "Yes" || ans == "yes"||ans=="YES")
   {
     fptr.file(30);
     goto end;
   }
+  do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(31);
-  cin>>this->ans;
-   if(this->ans == "yes" || ans == "Yes")
+  cin>>ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+   if(ans == "yes" || ans == "Yes"||ans=="YES")
   {
   fptr.file(32);
   goto end;
@@ -177,11 +238,14 @@ void MFullTimeCooperative()
   }
   end:;
 }
-int F_Assistantprofs()
+int virtual FAssistantprofs()
 {
+  do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(34);
-  cin>>this->ans;
-  if(this->ans == "Yes" || this->ans == "yes")
+  cin>>ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+  if(ans == "Yes" || ans == "yes"||ans=="YES")
  {
    fptr.file(35);
  }
@@ -190,29 +254,41 @@ int F_Assistantprofs()
   return 1;
   }
 }
-int female_lec(void)
+int virtual f_lecturar(void)
 {
+  do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(36);
-  cin>>ans;
-  if(ans == "Yes" || ans == "yes")
+  cin>>ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+  if(ans == "Yes" || ans == "yes"||ans=="YES")
   {
+    do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(37);
-  cin>>ans;
-  if(ans == "Yes" || ans == "yes")
+  cin>>ans;}
+  while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+  if(ans == "Yes" || ans == "yes"||ans=="YES")
   {
     fptr.file(38);
     goto end;
   }
+   do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(39);
-	cin >> ans;
-			if (ans == "yes" || ans == "Yes")
+	cin >> ans;}
+   while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+			if (ans == "yes" || ans == "Yes"||ans=="YES")
 			{
         fptr.file(40);
         goto end;
 			}
+      do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
       fptr.file(41);
-	  	cin >> ans;
-			if (ans == "yes" || ans == "Yes")
+	  	cin >> ans;}
+      while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+			if (ans == "yes" || ans == "Yes"||ans=="YES")
 				{
           fptr.file(42);
           goto end;
@@ -233,16 +309,22 @@ int female_lec(void)
 
 void FFullTimeCooperative()
 {
+   do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
   fptr.file(44);			
-	 cin >> ans;
-					if (ans == "yes" || ans == "Yes")
+	 cin >> ans;}
+    while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+					if (ans == "yes" || ans == "Yes"||ans=="YES")
 					{
             fptr.file(45);
             goto end;
 					}
+           do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
     fptr.file(46);
-	  cin >> ans;
-		if (ans == "yes")
+	  cin >> ans;}
+    while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+		if (ans == "yes" || ans == "Yes"||ans=="YES")
 		{
        fptr.file(47);
       goto end;
@@ -256,21 +338,30 @@ void FFullTimeCooperative()
 }
 void FVisitingfaculty(void)
 	{
+       do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
     fptr.file(49);
-		cin >> ans;
-		if (ans == "yes")
-		{
+		cin >> ans;}
+    while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+	if (ans == "yes" || ans == "Yes"||ans=="YES")
+		{do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
       fptr.file(50);
-			cin >> ans;
-			if (ans == "yes")
+			cin >> ans;}
+       while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+	  if (ans == "yes" || ans == "Yes"||ans=="YES")
 			{
         fptr.file(51);
 			}
-			else if (ans != "yes")
+			else if (ans != "yes"&& ans!="YES" && ans !="Yes")
 			{
+       do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
+
         fptr.file(52);
-				cin >> ans;
-				if (ans == "yes")
+				cin >> ans;}
+        while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+					if (ans == "yes" || ans == "Yes"||ans=="YES")
 				{
           fptr.file(53);
 				}
@@ -280,15 +371,21 @@ void FVisitingfaculty(void)
 
 			}
 		}
-			else if (ans != "yes")
+			else if (ans != "yes"&& ans!="YES" && ans !="Yes")
 			{
+        do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
         fptr.file(55);
-				cin >> ans;
-				if (ans == "yes")
+				cin >> ans;}
+         while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+			if (ans == "yes" || ans == "Yes"||ans=="YES")
 				{
+          do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
           fptr.file(56);
-					cin >> ans;
-					if (ans == "yes")
+					cin >> ans;}
+          while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+					if (ans == "yes" || ans == "Yes"||ans=="YES")
 					{
             fptr.file(57);
 					}
@@ -304,31 +401,42 @@ void FVisitingfaculty(void)
     void MVisitingfaculty() 
   
     {
+      do{system("cls");
+  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
       fptr.file(60);
-				cin >> ans;
-				if (ans == "yes")
+				cin >> ans;}
+        while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+				if (ans == "yes" || ans == "Yes"||ans=="YES")
         {
           fptr.file(61);
          goto end;
         }
-        else if(ans != "yes")
+        	else if (ans != "yes"&& ans!="YES" && ans !="Yes")
         {
+          do{system("cls");
+         cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
           fptr.file(62);
-					cin >> ans;
-				         	if (ans == "yes")
+					cin >> ans;}
+          while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+				         if (ans == "yes" || ans == "Yes"||ans=="YES")
 				            	{
                         fptr.file(63);
                          goto end;
 					             }
                        else
-                        {
+                        {do{system("cls");
+         cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
                           fptr.file(64);
-			                	cin >> ans;
-				                if (ans == "yes")
+			                	cin >> ans;}
+                        while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+				               if (ans == "yes" || ans == "Yes"||ans=="YES")
 				                   {
+                             do{system("cls");
+         cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
                              fptr.file(65);
-				                  	cin >> ans;
-					                   if (ans == "yes")
+				                  	cin >> ans;}
+                          while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+					                   if (ans == "yes" || ans == "Yes"||ans=="YES")
 				                     	{
                                  fptr.file(66);
                                goto end;
@@ -339,39 +447,51 @@ void FVisitingfaculty(void)
 					                          }
                           }
 				
-				        else if(ans != "yes")
+				        else if (ans != "yes"&& ans!="YES" && ans !="Yes")
             {
+              do{system("cls");
+         cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
                   fptr.file(68);
-					         cin >> ans;
-				         	if (ans == "yes")
+					         cin >> ans;}
+                    while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+				         	if (ans == "yes" || ans == "Yes"||ans=="YES")
 				            	{
                         fptr.file(69);
                          goto end;
 					             }
-                   else if(ans != "yes")
+                   else if (ans != "yes"&& ans!="YES" && ans !="Yes")
                 {
+                   do{system("cls");
+         cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
                   fptr.file(70);
-					         cin >> ans;
-				         	if (ans == "yes")
+					         cin >> ans;}
+                    while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+                if (ans == "yes" || ans == "Yes"||ans=="YES")
 				            	{
                         fptr.file(71);
                          goto end;
 					            }
-                       else if(ans != "yes")
+                      else if (ans != "yes"&& ans!="YES" && ans !="Yes")
                     {
+                       do{system("cls");
+         cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
                       fptr.file(72);
-					         cin >> ans;
-				         	if (ans == "yes")
+					         cin >> ans;}
+                    while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+				         	if (ans == "yes" || ans == "Yes"||ans=="YES")
 				            	{
                         fptr.file(73);
                          goto end;
 					            }
 
-                       else if(ans != "yes")
+                        else if (ans != "yes"&& ans!="YES" && ans !="Yes")
                       {
+                         do{system("cls");
+         cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
                         fptr.file(74);
-					         cin >> ans;
-				         	if (ans == "yes")
+					         cin >> ans;}
+                    while (ans!="yes"&&ans!="YES"&&ans!="Yes"&&ans!="no"&&ans!="NO"&&ans!="No");
+				         	if (ans == "yes" || ans == "Yes"||ans=="YES")
 				            	{
                         fptr.file(75);
                          goto end;
@@ -388,8 +508,25 @@ void FVisitingfaculty(void)
         } 
       end:;
   }
+
+ void virtual permenent()
+ {
+   //Abstract function
+ }
+ void virtual visiting()
+ {
+   //Abstract function
+ }
+
+ ~dt()
+ {
+   cout<<endl<<"DEStructor CAlled"<<endl;
+   delete[] Teacher;
+   Teacher = NULL;
+ }
   protected:
   string ans;
   File fptr;
+  dt *Teacher;
 
 };
