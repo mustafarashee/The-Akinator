@@ -518,6 +518,12 @@ void FVisitingfaculty(void)
    //Abstract function
  }
 
+ ~dt()
+ {
+   cout<<endl<<"DEStructor CAlled"<<endl;
+   delete[] Teacher;
+   Teacher = NULL;
+ }
   protected:
   string ans;
   File fptr;
