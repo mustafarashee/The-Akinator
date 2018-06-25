@@ -1,11 +1,11 @@
-Does your teacher permenent?
-Does your teacher male?
-Does your teacher Assosiate Professor?
+Is your teacher permenent?
+Is your teacher male?
+Is your teacher Assosiate Professor?
 Is your teacher Depertment's chairperson?
 I think of DR SADIQ ALI KHAN
 I think of DR NADEEM MEHMOOD
-Does your teacher Assistantprof?
-Does your teacher depertment's x-chairperson?
+Is your teacher Assistantprof?
+Is your teacher depertment's x-chairperson?
 I think of MR BADAR SAMI
 Is your teacher phd?
 Is your teacher x-student advisor?
@@ -33,8 +33,8 @@ I think of MR USMAN AMJAD
 I think of MR S. MEESAM ALI ZAIDI
 Is your teacher Assistant professor?
 I think of DR HUMERA TARIQ
-Does your teacher Lecturer?
-Does your teacher student's advisor?
+Is your teacher Lecturer?
+Is your teacher student's advisor?
 I think of MS HUMERA BASHEER
 Have your teacher done her MBA in 2009 from KUBS?
 I think of MARYAM FEROZ
@@ -71,6 +71,6 @@ Does your teacher teaches pst in your dept?
 I think of DR MOIZ
 Does your teacher teaches maths in your dept?
 I think of ASIF IQBAL
-Does your teacher GOLD MEDALIST?
+Is your teacher GOLD MEDALIST?
 I think of ANWAR MEHMOOD
 I think of ZEESHAN ALAM NAYYAR
