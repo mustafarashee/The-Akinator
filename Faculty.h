@@ -2,23 +2,22 @@
 #include "Gender.h"
 using namespace std;
 
-class faculty:public dt
+class faculty : public dt
 {
+  
 public:
-void Faculty(){
-a=teacher.faculty();
-
-if(a==1)
+int  Faculty()
 {
-gen.permenent();
+Teacher = new dt(); 
+if(Teacher->Faculty()==1)
+{
+  Teacher = new teacher_gender();
+  Teacher->permenent();
 }
-else{
-gen.visiting();
+else
+{
+  Teacher = new teacher_gender();
+  Teacher->visiting();
 }
 }
-protected:
-int a;
-
-dt teacher;
-teacher_gender gen;
 };

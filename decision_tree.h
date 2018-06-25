@@ -44,6 +44,8 @@ int gender()
   }
 }
 int virtual m_associate(void)
+
+{
 {//question 3
   do{system("cls");
   cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
@@ -72,6 +74,7 @@ int virtual m_associate(void)
 return 1;
   }}
   int virtual MAssistantprofs()
+{
 {//question 5
   do{system("cls");
   cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;

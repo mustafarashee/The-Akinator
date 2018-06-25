@@ -14,6 +14,7 @@ class File
       if(i==line)
       {
       cout << temp << endl;
+      break;
       }
       i++;
     }

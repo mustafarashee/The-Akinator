@@ -1,21 +1,17 @@
 #include <iostream>
-using namespace std;
-
 #include "assistant_prof.h"
+using namespace std;
 
 class associate : public dt
 {
 public:
-void m_associate(void)
+int m_associate(void)
 {
-b=asso.MAssosiate();
-if(b==1)
+  Teacher = new dt();
+if(Teacher->m_associate() == 1)
 {
-assist.MAssistantprofs();
+  Teacher = new Assistantprofs();
+  Teacher -> MAssistantprofs();
 }
 }
-protected:
-int b;
-dt asso;
-Assistantprofs assist;
 };
