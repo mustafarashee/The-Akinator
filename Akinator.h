@@ -27,7 +27,7 @@ class Akinator
  cout<<endl<<"           ***************THE AKINATOR***************"<<endl<<endl;
  }
   }
- protected:
+ private:
   string ans;
   string name;
   dt *Teacher;
