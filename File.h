@@ -6,18 +6,22 @@ class File
   public:
   void file (int line)
   {
-    string temp;
-    int i=1;
+   // string temp;
+     index=1;
     ifstream quest("questions.txt");
     while(getline(quest , temp))
     {
-      if(i==line)
+      if(index==line)
       {
       cout << temp << endl;
       break;
       }
-      i++;
+      index++;
     }
   }
+
+  private:
+  string temp;
+  int index;
 
 };
